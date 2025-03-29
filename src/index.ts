@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use('/user',user)
+app.use('/users',user)
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
     errorHandler(err, req, res, next);
